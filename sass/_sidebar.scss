@@ -5,33 +5,34 @@
   grid-row: 1 / -1;
   display: flex;
   justify-content: center;
-}
 
-.nav{
-  height: 2px;
-  width: 4.5rem;
-  background-color: #fff;
-  display: block;
-  position: relative;
-  margin-top: 4rem;
-  
-  
-
-  &::before,
-  &::after{
+  &__nav{
     height: 2px;
     width: 4.5rem;
     background-color: #fff;
     display: block;
-    content: "";
-    position: absolute;
-    left: 0;
+    position: relative;
+    margin-top: 4rem;
+    
+    
+  
+    &::before,
+    &::after{
+      height: 2px;
+      width: 4.5rem;
+      background-color: #fff;
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    &::before{
+      top: -1.5rem;
+    }
+    &::after{
+      top: 1.5rem;
+    }
+  
   }
-  &::before{
-    top: -1.5rem;
-  }
-  &::after{
-    top: 1.5rem;
-  }
-
 }
+
