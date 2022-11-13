@@ -64,9 +64,31 @@ body {
   margin-bottom: 5rem; }
 
 .sidebar {
-  background-color: darkolivegreen;
+  background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+
+.nav {
+  height: 2px;
+  width: 4.5rem;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  margin-top: 4rem; }
+  .nav::before, .nav::after {
+    height: 2px;
+    width: 4.5rem;
+    background-color: #fff;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0; }
+  .nav::before {
+    top: -1.5rem; }
+  .nav::after {
+    top: 1.5rem; }
 
 .header {
   background-color: yellow;
